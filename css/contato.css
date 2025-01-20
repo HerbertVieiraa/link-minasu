@@ -1,3 +1,10 @@
+:root{
+    --primary-color: #9A001A;
+    --secondary-color: #363636;
+}
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -12,26 +19,47 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     text-align: center;
   
 }
-
 .container {
-    background: white;
+    background: rgb(236, 234, 234);
     border-radius: 10px;
-    padding: 50px;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Limita a largura máxima da página */
+    max-width: 400px; /* Limita a largura máxima da página */
     margin: auto; /* Centraliza a página */
 }
 
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: -10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
 
+h1 {
+    color: #000000;
+    font-size: 24px; /* Tamanho da fonte do título */
+}
+
+p {
+    color: #272727;
+    font-size: 16px; /* Tamanho da fonte da descrição */
+    margin-bottom: 20px; /* Espaço abaixo da descrição */
+}
 
 .links a {
     display: block;
-    margin: 20px 0;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 10px;
     background: #9A001A;
     color: white;
     text-decoration: none;
@@ -40,24 +68,26 @@ body {
 }
 
 .links a:hover {
-    background: #363636;
+    background: #5a5959;
     
 }
 
-
-button.button-voltar,a{
-    background-color: #9A001A;
-    font-family: 'Roboto', sans-serif;
-    border: 0;
-    border-radius: 10px;
-    color: #fff;
-    padding: 20px 40px;
+button {
+    display: block;
+    border: none;
+    margin: 10px 0;
+    padding: 5px 60px;
+    background: #9A001A;
+    color: white;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    text-transform: uppercase;
-    cursor: pointer;    
+    border-radius: 5px;
+    transition: background 0.2s; /* Transição suave para o hover */
 }
+
+button:hover {
+    background: #5a5959;
+}
+
 
 
 /* Responsividade */
