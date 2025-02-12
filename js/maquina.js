@@ -6,3 +6,4 @@ function typeWriter(e) {
    }
    const texto = document.querySelector('h1')
    typeWriter(texto)
+   
