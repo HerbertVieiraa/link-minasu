@@ -1,100 +1,81 @@
-:root{
-    --primary-color: #9A001A;
-    --secondary-color: #363636; 
-}
-
+/* Reset básico */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #c9c6c6;
+    font-family: Arial, sans-serif;
+    background-color:#c9c6c6;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    padding:100px;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-      
 }
 
 .container {
-    background: rgb(255, 255, 255);
+    background-color: white;
+    padding: 20px;
     border-radius: 10px;
-    padding: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Limita a largura máxima da página */
-    margin: auto; /* Centraliza a página */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
 }
 
-.logo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: -10px;
-    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
-}
-.logo img {
-    width: 100%;
-    height: auto;
+header {
+    margin-bottom: 20px;
 }
 
 h1 {
+    font-size: 2em;
     color: #000000;
-    font-size: 24px; /* Tamanho da fonte do título */
 }
 
 p {
-    color: #272727;
-    font-size: 16px; /* Tamanho da fonte da descrição */
-    margin-bottom: 20px; /* Espaço abaixo da descrição */
+    color: #666;
+    margin-top: 8px;
+    font-size: 14px;
 }
 
-.links a {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    background: #9A001A;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s; /* Transição suave para o hover */
-}
-
-.links a:hover {
-    background: #5a5959;
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     
 }
 
-button {
-    display: block;
-    border: none;
-    margin: 2px 0;
-    padding: 5px 60px;
-    background: #9A001A;
-    color: white;
+.links a {
+   
     text-decoration: none;
+    color: #9A001A;
+    padding: 10px;
+    border: 1px solid  #9A001A;
     border-radius: 5px;
-    transition: background 0.1s; /* Transição suave para o hover */
+    transition: background-color 0.1s, color 0.1s;
+  
 }
 
-button:hover {
-    background: #5a5959;
+.links a:hover {
+    background-color: #666666;
+    border: none;
+    color: white;
 }
 
+.back-button {
+    margin-top: 20px;
+}
 
+.back-button a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color:  #9A001A;
+    padding: 10px 45%;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-/* Responsividade */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 20px; /* Tamanho da fonte do título em telas menores */
-    }
-
-    .links a {
-        padding: 18px; /* Aumenta o padding dos links em telas menores */
-    }
+.back-button a:hover {
+    background-color: #c0392b;
 }
