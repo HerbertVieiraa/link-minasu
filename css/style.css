@@ -85,16 +85,30 @@ p {
     
 }
 
+
 footer h6{
     font-size: 11px;
     font-weight: 600;
     margin-top: 20px;
     color: #272727;
-}
+} 
+
 
 
 /* Responsividade */
-@media (max-width: 600px) {
+@media screen and (min-width: 600px) {
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .container {
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;        
+        max-width: 100%;        
+
+    }
+
     h1 {
         font-size: 20px; /* Tamanho da fonte do título em telas menores */
     }
@@ -107,8 +121,8 @@ footer h6{
         padding: 12px; /* Aumenta o padding dos links em telas menores */
     }
     footer h6{
-        font-weight: 300;
-        font-size: 8px;
+        font-weight: 600;
+        font-size: 12px;
 
     }   
 
